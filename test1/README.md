@@ -2,7 +2,7 @@
 
 | 学号         | 班级         | 姓名 | 照片                                                         |
 | :----------- | :----------- | :--- | :----------------------------------------------------------- |
-| 201710414205 | 软件(本)17-2 | 胡古 | <img src="background.jpg" alt="flow1.png" style="zoom:25%;" /> |
+| 201710414205 | 软件(本)17-2 | 胡古 | <img src="background.jpg" alt="background.png" style="zoom:25%;" /> |
 
 ## 流程图1：考试及成绩管理流程
 
@@ -50,7 +50,7 @@ end
 
 ### 业务流程图如下：
 
-<img src="flow1.png" alt="flow" style="zoom:75%;" />
+<img src="flow1.png" alt="flow1" style="zoom:75%;" />
 
 ### 流程说明
 
