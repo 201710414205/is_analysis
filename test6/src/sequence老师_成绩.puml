@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title 基于GitHub的实验管理平台--查看成绩_老师用例的顺序图
+actor teachers
+teachers -> tests: 得成绩
+teachers -> tests: 写评论
+tests -> grades: 录入成绩与评论
+grades --> teachers:查看所有同学的成绩
+@enduml

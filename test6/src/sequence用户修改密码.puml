@@ -1,0 +1,15 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title 基于GitHub的实验管理平台--修改密码用例的顺序图
+actor 用户
+participant GitHub密码
+activate 用户
+    用户->密码:修改GitHub密码密码
+    opt 密码不合法
+        密码->用户:修改密码失败,return "error"
+    end opt
+    密码->用户:修改密码成功,return "success"
+deactivate 用户
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title:基于GitHub的实验管理平台--查看用户信息用例顺序图
+actor 用户
+participant 用户信息
+activate 用户
+    用户->用户信息:请求得到用户信息
+    activate 用户信息
+        用户信息->用户:return getUserMessage
+    deactivate 用户信息
+deactivate 用户
+@enduml

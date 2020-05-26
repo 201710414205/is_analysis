@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+
+title 基于GitHub的实验管理平台--查看成绩_学生用例的顺序图
+actor students
+students -> grades: 查看实验总成绩
+tests -> grades
+grades -> students:返回学生实验成绩
+@enduml

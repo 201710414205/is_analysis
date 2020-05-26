@@ -1,0 +1,19 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title 基于GitHub的实验管理平台--登出用例的顺序图
+
+actor 用户
+participant session
+participant cookie
+
+
+activate 用户
+
+    用户->session:退出   session清除
+    session->cookie:cookie清除
+    cookie->session:return cookie清除成功
+    session->用户:return session清除成功 退出成功
+deactivate 用户
+
+@enduml

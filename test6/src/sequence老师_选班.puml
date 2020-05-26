@@ -1,0 +1,30 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title 基于GitHub的实验管理平台--选课_老师用例的顺序图
+
+actor 老师
+participant 班级
+
+activate 老师
+    loop 班级选择
+        老师->班级:获取班级
+        activate 班级
+            opt 该课程无法选择班级
+                班级->老师:return error
+            end opt
+            opt 没有该班级
+                班级->老师:return null
+            end opt
+            班级->老师:返回班级列表
+        deactivate 班级
+
+        老师->班级:选择班级
+        activate 班级
+            班级->老师:选择成功 return success
+        deactivate 班级
+    end loop
+deactivate 老师
+
+@enduml
+

@@ -1,0 +1,28 @@
+@startuml
+skinparam backgroundColor #00FF7F
+
+title 基于GitHub的实验管理平台--登录_学生用例的顺序图
+
+actor user
+participant 用户名
+participant 密码
+participant cookie
+participant session
+
+activate user
+        activate 用户名
+            用户名->密码:输入密码
+            activate 密码
+                opt 用户名或密码不正确
+                    密码->用户:登录失败
+                end opt
+                密码->cookie:保存密码到cookie
+                密码->session:将用户账号录入session
+                activate cookie
+                    cookie->用户:登录成功
+                deactivate cookie
+            deactivate 密码
+        deactivate 用户名
+deactivate user
+
+@enduml
