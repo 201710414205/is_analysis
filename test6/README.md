@@ -50,22 +50,22 @@
 - ### [参见数据库设计](./数据库设计.md)
 
 ## 6. 用例及界面详细设计
-- ### [“修改密码”用例](src//用例/修改密码.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/修改用户信息.html)
+- ### [“修改密码”用例](src//用例/修改密码.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/修改用户信息.html)
 
-- ### [“修改用户信息”用例](src//用例/修改用户信息.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/修改用户信息.html)
+- ### [“修改用户信息”用例](src//用例/修改用户信息.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/修改用户信息.html)
 
-- ### [“查看成绩_学生”用例](src//用例/查看成绩_学生.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/成绩与评语.html)
+- ### [“查看成绩_学生”用例](src//用例/查看成绩_学生.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/成绩与评语.html)
 
-- ### [“查看成绩_老师”用例](src//用例/查看成绩_老师.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/老师评分.html)
+- ### [“查看成绩_老师”用例](src//用例/查看成绩_老师.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/老师评分.html)
 
-- ### [“查看用户信息”用例](src/用例/查看用户信息.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/用户信息.html)
+- ### [“查看用户信息”用例](src/用例/查看用户信息.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/用户信息.html)
 
-- ### [“登出”用例](src/用例/登出.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/学生主页.html)
+- ### [“登出”用例](src/用例/登出.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/学生主页.html)
 
-- **[“登入”用例](src/用例/登录_学生.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/io/登入.html)**
+- **[“登入”用例](src/用例/登录_学生.md),[界面](https://201710414205.github.io/is_analysis/test6/io/登入.html)**
 
-- ### [“评定成绩”用例](src//用例/评定成绩.md),[界面](https://201710414205.github.io/is_analysis_pages/test6/ui/老师评分.html)
+- ### [“评定成绩”用例](src//用例/评定成绩.md),[界面](https://201710414205.github.io/is_analysis/test6/ui/老师评分.html)
 
-- ### [“选课_学生”用例](src//用例/选课_学生.md),[界面](https://ssw383318348.github.io/is_analysis_pages/test6/ui/学生选课.html)
+- ### [“选课_学生”用例](src//用例/选课_学生.md),[界面](https://ssw383318348.github.io/is_analysis/test6/ui/学生选课.html)
 
-- ### [“选课_老师”用例](src//用例/选课_老师.md),[界面](https://ssw383318348.github.io/is_analysis_pages/test6/ui/老师选择班级.html)
+- ### [“选课_老师”用例](src//用例/选课_老师.md),[界面](https://ssw383318348.github.io/is_analysis/test6/ui/老师选择班级.html)
