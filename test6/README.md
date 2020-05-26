@@ -35,7 +35,7 @@
 
 ![](系统总体结构设计.png)
 
-界面设计参见：https://zwdcdu.github.io/is_analysis/test6/ui/index.html
+界面设计参见：https://201710414205.github.io/is_analysis/test6/ui/index.html
     
 ## 3. 用例图设计 [源码](src/UseCase.puml)
 
