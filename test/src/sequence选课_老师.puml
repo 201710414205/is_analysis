@@ -1,0 +1,25 @@
+@startuml
+title 基于GitHub的实验管理平台--选课_老师用例的顺序图
+
+actor 老师
+participant 班级
+
+activate 老师
+    loop 对每门课程
+        老师->班级:获取班级
+        activate 班级
+            opt 该课程无法选择班级
+                班级->老师:返回空
+            end opt
+            班级->老师:返回班级列表
+        deactivate 班级
+
+        老师->班级:选择班级
+        activate 班级
+            班级->老师:选择班级成功
+        deactivate 班级
+    end loop
+deactivate 老师
+
+@enduml
+

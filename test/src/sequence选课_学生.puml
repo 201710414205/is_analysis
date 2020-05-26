@@ -1,0 +1,23 @@
+@startuml
+title 基于GitHub的实验管理平台--选课_学生用例的顺序图
+actor 学生
+participant 课程
+
+activate 学生
+    loop 对每门课程
+        学生->课程:获取课程
+        activate 课程
+            opt 无可选课程
+                课程->学生:返回空
+            end opt
+            课程->学生:返回课程列表
+        deactivate 课程
+        学生->课程:选择课程
+        activate 课程
+            课程->学生:选择课程成功
+        deactivate 课程
+    end loop
+deactivate 学生
+@enduml
+
+

@@ -1,0 +1,18 @@
+@startuml
+title 基于GitHub的实验管理平台--登出用例的顺序图
+
+actor 用户
+participant cookie
+
+activate 用户
+    opt 登录后长时间未操作
+        用户->cookie:清除cookie
+        cookie->用户:登出成功
+    end opt
+
+    用户->用户:登出
+    用户->cookie:清除cookie
+    cookie->用户:登出成功
+deactivate 用户
+
+@enduml

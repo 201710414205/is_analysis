@@ -1,0 +1,84 @@
+@startuml
+
+
+
+class Teacher {
+    String teacher_id（教师教职工号）
+    int user_id（用户id）
+    String department（教师所属部门）
+}
+
+class Student {
+    String student_id（学生学号）
+    int user_id（用户id）
+    int class_id（班级id）
+}
+
+Student "n" --* "1" Class : 组成 >
+class Class {
+    int class_id（班级id）
+    int grade（班级所在年级）
+    String major（班级所在专业）
+    int number（班级序号）
+}
+
+
+Student "1" --* "1" Choose : 选课 >
+Lesson "1" -- "n" Choose : 选择 <
+class Choose {
+    int choose_id（选课id）
+    int lesson_id（课程id）
+    String student_id（学生学号）
+    Date choose_time（选课时间）
+}
+
+
+Class "1..4" -- "1" Lesson : 被选择 >
+Teacher "1" -- "n" Lesson : 上课 >
+class Lesson {
+    int lesson_id（课程id）
+    String teacher_id（教师教职工号）
+    int class_id（班级id）
+    boolean choose（是否学生选课）
+    int year（开课年份）
+    char semester（开课学期）
+    Date set_time（设置时间）
+}
+
+Test "n" --* "1" Lesson : 拥有 <
+class Test {
+    int test_id（实验id）
+    int lesson_id（课程id）
+    String test_name（实验名称）
+    Date test_time（实验时间）
+    Date set_time（设置时间）
+}
+
+Score "n" --* "1" Test : 得到 <
+Student "1" -- "n" Score : 查看 >
+Teacher "1" -- "n" Score : 查看 >
+class Score {
+    int score_id（分数id）
+    int test_id（实验id）
+    String student_id（学生学号）
+    String github（实验所在github地址）
+    int process（过程叙述）
+    int concept（概念正确）
+    int language（语言表达）
+    int structure（结构条理）
+    int logic（逻辑性）
+    boolean plagiarize（是否抄袭）
+    String comment（教师评语）
+    Date mark_time（评阅时间）
+}
+
+Student "1" -- "n" Average : 查看 >
+Lesson "1" *-- "n" Average : 计算 >
+class Average {
+    int average_id（平均分id）
+    int lesson_id（课程id）
+    String student_id（学生学号）
+    Date count_time（计算时间）
+}
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+title 基于GitHub的实验管理平台--修改用户信息用例的顺序图
+actor 用户
+participant 用户信息
+
+activate 用户
+    用户->用户信息:获取用户信息
+    activate 用户信息
+        用户信息->用户:返回用户信息
+        用户->用户信息:修改用户信息
+        opt 用户信息不合法
+            用户信息->用户:修改用户信息失败
+        end opt
+        用户信息->用户:修改用户信息成功
+    deactivate 用户信息
+deactivate 用户
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+title 基于GitHub的实验管理平台--修改密码用例的顺序图
+actor 用户
+participant 密码
+activate 用户
+    用户->密码:修改密码
+    opt 提交的密码不合法
+        密码->用户:修改密码失败
+    end opt
+    密码->用户:修改密码成功
+deactivate 用户
+
+@enduml
